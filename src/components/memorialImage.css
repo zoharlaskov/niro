@@ -1,0 +1,14 @@
+.candle-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.candle-container img {
+  width: 50px;
+  height: auto;
+}

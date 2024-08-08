@@ -1,0 +1,244 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0%;
+  height: 100%;
+  background-image: url("./assets/mountains-hatzeva.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: #f7dd88;
+  color: #000000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 22px;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: transform 0.1s, background-color 0.1s;
+}
+
+.header nav ul li a:hover {
+  background-color: #fcf6a3;
+}
+
+.header nav ul li a:active {
+  transform: scale(0.95);
+}
+
+.header .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.header .right-section svg,
+.header .right-section img,
+.header .right-section span {
+  margin-left: 10px;
+}
+
+.header .right-section .mountains-icon {
+  margin-right: 5px;
+}
+
+.section {
+  padding: 100px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1;
+}
+
+.scroll-to-top button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #e1e6a5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.scroll-to-top button:hover {
+  background-color: #000000;
+}
+
+.eulogies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.eulogies-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.eulogy {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.eulogy img.eulogy-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.eulogy h2 {
+  font-family: "Georgia", serif;
+  font-size: 1.75em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.eulogy p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.comments-section button {
+  padding: 10px 20px;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section li {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .header nav ul {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .section {
+    padding: 50px 10px;
+  }
+
+  .video iframe {
+    width: 80%;
+    left: 0;
+  }
+
+  .scroll-to-top button {
+    font-size: 14px;
+  }
+
+  .eulogy h2 {
+    font-size: 1.5em;
+  }
+
+  .eulogy p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header nav ul {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .header nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .section {
+    padding: 80px 15px;
+  }
+
+  .video iframe {
+    width: 80%;
+    left: 10px;
+  }
+
+  .scroll-to-top button {
+    font-size: 15px;
+  }
+
+  .eulogy h2 {
+    font-size: 1.6em;
+  }
+
+  .eulogy p {
+    font-size: 1.1em;
+  }
+}
